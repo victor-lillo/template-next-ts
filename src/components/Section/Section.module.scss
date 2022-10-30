@@ -1,0 +1,23 @@
+@use '@sass_settings/sizes.scss';
+
+.section {
+  width: var(--section-width);
+  max-width: 100%;
+  border: 1px solid red;
+
+  @media only screen and (min-width: #{sizes.$tablet}) {
+    border: 1px solid blue;
+  }
+
+  @media only screen and (min-width: #{sizes.$desktop}) {
+    border: 1px solid yellow;
+  }
+}
+
+.full {
+  width: 100%;
+}
+
+.test {
+  background-color: lightgrey;
+}

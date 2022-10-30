@@ -1,0 +1,39 @@
+@use '@sass_settings/sizes.scss';
+
+.container {
+  padding: 1rem;
+  background-color: var(--button-color);
+  color: white;
+
+  &:disabled {
+    filter: opacity(0.6);
+  }
+
+  &:enabled:active {
+    transform: scale(0.96);
+  }
+
+  @media (hover: hover) {
+    &:hover:not(:disabled) {
+      filter: brightness(0.9);
+    }
+  }
+}
+
+@media only screen and (min-width: #{sizes.$mobile}) {
+  .container {
+    border: 4px solid black;
+  }
+}
+
+@media only screen and (min-width: #{sizes.$tablet}) {
+  .container {
+    border: 4px solid grey;
+  }
+}
+
+@media only screen and (min-width: #{sizes.$desktop}) {
+  .container {
+    border: 4px solid white;
+  }
+}
