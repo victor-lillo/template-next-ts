@@ -13,7 +13,7 @@ _This template allows you to create a NextJS project, and easily deploy it on Gi
 ## Features ✅
 
 - Different NextJS features implementation examples, such as: server side rendering (SSR), layout with dynamic css classes, CSS modules...
-- Support conditionally CSS classes addition [classnames-creator](https://github.com/fentosv/classnames-creator).
+- Support conditionally CSS classes addition [classnames-creator](https://github.com/victor-lillo/classnames-creator).
 - [SASS](https://sass-lang.com/) added.
 - Sitemap template, using [ekalinin's sitemap library](https://github.com/ekalinin/sitemap.js).
 - Discord webhook notification on web deployment.
